@@ -18,7 +18,7 @@ def simular_nivel_do_mar(ano_inicial, ano_final, taxa_aumento):
     print(f"Taxa de aumento: {taxa_aumento:.2f} cm/ano")
     print(f"Aumento total: {nivel_do_mar:.2f} cm")
 
-    # Impacto em áreas costeiras (opcional)
+    # Impacto em áreas costeiras (opcional) / Mudar para opções do Brasil ou para qualquer area proxima dos oceanos
     if input("\nDeseja avaliar o impacto em áreas costeiras? (S/N): ").upper() == "S":
         areas_costeiras = [
             {"nome": "Área A", "altitude": 50},
