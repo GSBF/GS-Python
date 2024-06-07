@@ -68,11 +68,10 @@ def menu():
 
 # Função principal
 def main():
-    # Exibir mensagem de boas-vindas
-    exibir_boas_vindas()
-
     niveis_ano_a_ano = []
     nivel_do_mar = 0.0
+
+    exibir_boas_vindas()  # Exibir a mensagem de boas-vindas uma vez
 
     while True:
         menu()
@@ -96,7 +95,7 @@ def main():
             case "3":
                 if niveis_ano_a_ano:
                     print("\nVocê escolheu a terceira opção.")
-                    print("Vamos vizualizar o gráfico do aumento do nível do mar!!!\n")
+                    print("Vamos visualizar o gráfico do aumento do nível do mar!!!\n")
                     plotar_grafico(ano_inicial, niveis_ano_a_ano)
                 else:
                     print("\nPor favor, execute a simulação do nível do mar primeiro (opção 1).")
